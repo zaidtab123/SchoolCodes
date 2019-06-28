@@ -27,6 +27,12 @@ elif x==3:
     square()
 
 else:
+<<<<<<< HEAD
     print("Invalid input!")
   
 #in Master branch
+=======
+    print("Not accepted! Enter a valid number!")
+
+#In Experiment Branch
+>>>>>>> Experiment
