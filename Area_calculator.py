@@ -27,6 +27,6 @@ elif x==3:
     square()
 
 else:
-    print("Wrong input!!")
+    print("Invalid input!")
   
 #Tried something new!
