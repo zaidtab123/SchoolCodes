@@ -4,9 +4,9 @@ db = mysql.connector.connect(host="localhost",user="root",password="123456",data
 
 cursor = db.cursor()
 
-cursor.execute("SELECT VERSION()")
+cursor.execute("SELECT CURRENTUSER()")
 
-data = cursor.fetchone()
+data = cursor.fetchmany()
 print("Database version : %s " % data)
 
 db.close()
