@@ -21,8 +21,11 @@ cursor.execute(create_table)
 try:
     i = 1
     while i > 0:
+        cursor.execute("select max(sno) from "+table_name)
+        a=cursor.fetchone()
+        print(a)
         s_no = i
-        product = int(input('Enter the class of student: '))
+        product = input('Enter the name of product: ')
         price = int(input('Enter the age of student: '))
         value = str((s_no, product, price))
         insert_values = "insert into " + table_name + " values" + value
