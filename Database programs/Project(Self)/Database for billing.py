@@ -6,8 +6,8 @@ cursor = db.cursor()
 try:
     i = 1
     while i > 0:
-        cursor.execute("select max(SNo) from product_details")
-        d= cursor.fetchone()
+        cursor.execute("select max(ProductID) from product_details")
+        d = cursor.fetchone()
         if d[0] == None:
             s_no = 1
         else:
